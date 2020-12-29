@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lirgtgray"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab1"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_home"
+            android:text="@string/tab1"/>
+
+        <RadioButton
+            android:id="@+id/tab2"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_gn"
+            android:text="@string/tab2"/>
+        <RadioButton
+           android:id="@+id/tab3"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_lt"
+            android:text="聊天"/>
+        <RadioButton
+            android:id="@+id/tab4"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_my"
+            android:text="@string/tab3"/>
+    </RadioGroup>
+
+
+</RelativeLayout>

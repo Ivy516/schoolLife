@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/login_background"
+    android:layout_height="200dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/head_portrait"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_touxiang"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/head_portrait"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学号"
+        android:textSize="18dp"
+        android:layout_toRightOf="@id/head_portrait"
+        android:layout_marginTop="90dp"/>
+
+
+</RelativeLayout>
